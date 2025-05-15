@@ -1,0 +1,15 @@
+window.onload = function () {
+    fetch('/api/inventory')
+        .then(response => response.json())
+        .then(data => {
+            const table = document.getElementById('inventory-table');
+            data.forEach(item => {
+                const row = table.insertRow();
+                row.innerHTML = `
+                    <td>${item.item}</td>
+                    <td>${item.quantity}</td>
+                    <td>${item.status}</td>
+                `;
+            });
+        });
+};

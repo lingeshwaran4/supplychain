@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Supply Chain Dashboard</title>
+    <script src="/static/dashboard.js" defer></script>
+</head>
+<body>
+    <h1>Inventory Dashboard</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="inventory-table">
+            <!-- Data loads here -->
+        </tbody>
+    </table>
+</body>
+</html>
